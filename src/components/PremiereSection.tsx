@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { EASE } from "@/lib/motion";
 import { scrollToId } from "@/lib/nav";
 import Footer from "@/components/Footer";
+import { asset } from "@/lib/assets";
 
 const container = {
   hidden: {},
@@ -33,7 +34,7 @@ export default function PremiereSection() {
       {/* Floating astronaut plate */}
       <div className="absolute inset-0">
         <Image
-          src="/images/premiere.jpg"
+          src={asset("/images/premiere.jpg")}
           alt="An astronaut floats horizontally through dark space beside a massive fiery launch plume"
           fill
           sizes="100vw"

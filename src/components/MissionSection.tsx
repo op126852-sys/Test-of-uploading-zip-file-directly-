@@ -3,6 +3,7 @@
 import Reveal from "@/components/Reveal";
 import StatsBar from "@/components/StatsBar";
 import ParallaxImage from "@/components/ParallaxImage";
+import { asset } from "@/lib/assets";
 
 export default function MissionSection() {
   return (
@@ -12,7 +13,7 @@ export default function MissionSection() {
       className="relative min-h-[780px] w-full overflow-hidden md:h-[90vh] md:min-h-[620px]"
     >
       <ParallaxImage
-        src="/images/mission.jpg"
+        src={asset("/images/mission.jpg")}
         alt="An astronaut floats diagonally outside a spacecraft hatch beside a fiery launch tower"
         className="object-[62%_center]"
         sizes="100vw"

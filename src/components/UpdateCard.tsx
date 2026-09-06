@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { EASE } from "@/lib/motion";
+import { asset } from "@/lib/assets";
 
 export interface Update {
   category: string;
@@ -24,7 +25,7 @@ export default function UpdateCard({ update }: { update: Update }) {
       <a href="#updates" onClick={(e) => e.preventDefault()} className="block">
         <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[16/10]">
           <Image
-            src={update.image}
+            src={asset(update.image)}
             alt={update.alt}
             fill
             sizes="(max-width: 700px) 100vw, (max-width: 1023px) 46vw, 32vw"

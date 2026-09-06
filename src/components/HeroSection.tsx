@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { EASE } from "@/lib/motion";
 import { scrollToId } from "@/lib/nav";
+import { asset } from "@/lib/assets";
 
 const container = {
   hidden: {},
@@ -26,7 +27,7 @@ export default function HeroSection() {
       {/* Background photograph — helmet right, launch fire left */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-astronaut.jpg"
+          src={asset("/images/hero-astronaut.jpg")}
           alt="A close-up of an astronaut in a reflective white helmet standing beside a fiery rocket launch"
           fill
           priority

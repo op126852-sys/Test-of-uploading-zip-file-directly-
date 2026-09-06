@@ -6,6 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 import { EASE } from "@/lib/motion";
 import UpdateCard, { type Update } from "@/components/UpdateCard";
 import Reveal from "@/components/Reveal";
+import { asset } from "@/lib/assets";
 
 const UPDATES: Update[] = [
   {
@@ -41,7 +42,7 @@ export default function UpdatesSection() {
       {/* Dark photographic plate — distant launch fire, astronaut silhouette */}
       <div className="absolute inset-0">
         <Image
-          src="/images/updates-bg.jpg"
+          src={asset("/images/updates-bg.jpg")}
           alt=""
           aria-hidden
           fill
